@@ -3,11 +3,12 @@ import requests
 import json
 import time
 import hashlib
+import sys
 
 requests.packages.urllib3.disable_warnings()
 
-api_key = '-'
-secret_key = '-'
+api_key = sys.argv[1]
+secret_key = sys.argv[2]
 symbol = 'bchusdt'
 amountdot = 4
 treading_amount = 0.1
